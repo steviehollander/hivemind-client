@@ -1,0 +1,26 @@
+.logo {
+
+    width: 250px;
+    display: grid;
+
+
+
+
+
+}
+
+
+
+.container--login {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0%;
+
+    border: 25px solid #B88846;
+    border-image: url("https://cdn11.bigcommerce.com/s-vn0shauajx/images/stencil/1280x1280/products/146065/147348/80329-08__69751.1612188864.jpg?c=1") 25;
+
+
+
+    outline-offset: 42px;
+}
