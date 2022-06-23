@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+
+
+.eventImg {
+    width: 230px
+
+
+}
+
+.event {
+   
+    
+   
+    width: fit-content;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    min-width: 240px;
+    font-family: 'Abhaya Libre', serif;
+   font-weight: 900;
+   margin-right: 200px;
+   margin-bottom: 40px;
+   margin-top: 30px;
+
+}
+
+
+
+.events {
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    grid-gap: 10px;
+    padding: 10px
+
+}
+
+
+
+
+.event {
+  position: relative;
+  width: 350px;
+  height: 550px;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  
+  box-shadow: 20px 20px rgba(128, 127, 126, 0.681);
+  transition: all .4s ease;
+}
+.event:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+
+.thehive {
+    background-image: url('https://thumbs.dreamstime.com/b/colorful-beehive-pattern-graphic-vector-texture-design-colorful-beehive-pattern-graphic-texture-design-229768411.jpg');
+    background-blend-mode: lighten;
+    border-radius: 30px;
+        box-shadow: 0 30px 40px rgba(242, 186, 89, 0.847);
+}
+
+
+.wherewhen {
+    font-family:'Cabin Sketch', cursive;
+    font-size: 26px;
+    color: rgb(141, 14, 82);
+    transform: translate(1%, 13%)
+    
+    
+}
+
+.where {
+    margin-left: 130px;
+}
+
+
+.btn {
+    background-color: rgb(235, 158, 64);
+    display: grid;
+    align-self: center;
+    margin-left: 515px;
+    outline-offset: 42px;
+    border-radius: 20px;
+    font-family:'Cabin Sketch', cursive;
+
+}
+
+
+.btn2 {
+    background-color: rgb(235, 158, 64);
+
+}
+
+
+.btn2:hover {
+    background-color: rgb(248, 215, 132);
+
+}
+
+
+.neweventitem {
+    margin-bottom: 1%;
+    margin-left: 60%;
+    border-width: 20%;
+    
+    transform: translate(-50%, -50%)
+
+}
+
+
+.EventForm {
+    font-family: 'Cabin Sketch', cursive;
+        background-image: url('https://thumbs.dreamstime.com/b/colorful-beehive-pattern-graphic-vector-texture-design-colorful-beehive-pattern-graphic-texture-design-229768411.jpg');
+        border: #f0c588 solid 2px;
+        border-radius: 30px;
+        box-shadow: 0 30px 40px rgba(242, 186, 89, 0.847);
+        
+
+}
+
+
+.eventForm__title {
+    margin-left: 60%;
+    transform: translate(-50%, -50%)
+
+}
+
+
+
+
+

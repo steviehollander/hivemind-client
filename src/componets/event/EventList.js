@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { getEvents } from './EventManager'
 import { useHistory } from 'react-router-dom'
 import { getCities } from '../city/CityManager'
+import './Event.css'
 
 export const EventList = (props) => {
   const [events, setEvents] = useState([])
@@ -48,41 +49,47 @@ export const EventList = (props) => {
 
   return (
     <>
-      <div>
-        <label className="where">Where are we going?</label>
-        <input
-          placeholder="Where are you going?"
-          onChange={(event) => setQuery(event.target.value)}
-        ></input>
-      </div>
-      <label className="where">When are we going?</label>
-      <input type="date" onChange={(event) => setQuery(event.target.value)} />
-      <article className="events">
-        {searchedEvents.map((event) => {
-          return (
-            <section key={`event--${event.id}`} className="event">
-              <img class="EventImg" src={event.imgAddress} />
-              <div className="event__des">{event.name}</div>
-              <div className="game__details">{event.description} </div>
-              {event.city.map((city) => {
-                return <div className="game__details">{city.name} </div>
-              })}
+      <article className="thehive">
+        <div className="wherewhen">
+          <label className="where">Where are we going?</label>
+          <input
+            placeholder="Where are you going?"
+            onChange={(event) => setQuery(event.target.value)}
+          ></input>
+          <label className="where">When are we going?</label>
+          <input type="date" onChange={(event) => setQuery(event.target.value)} />
+          <button
+            className="btn"
+            onClick={() => {
+              history.push({ pathname: '/events/new' })
+            }}
+          >
+            Register New Event
+          </button>
+        </div>
 
-              <div className="event__time">
-                {event.date} at {event.time}{' '}
-              </div>
-            </section>
-          )
-        })}
+        <article className="events">
+          {searchedEvents.map((event) => {
+            return (
+              <section key={`event--${event.id}`} className="event">
+                <img class="eventImg" src={event.imgAddress} />
+                <div className="event__des">{event.name}</div>
+                <div className="game__details">{event.description} </div>
+                {event.city.map((city) => {
+                  return <div className="game__details">{city.name} </div>
+                })}
+
+                <div className="event__time">
+                  {event.date} at {event.time}{' '}
+                </div>
+                <a className="extraLink" target="_blank" href={event.extraLink}>
+                  More Info
+                </a>
+              </section>
+            )
+          })}
+        </article>
       </article>
-      <button
-        className="btn btn-2 btn-sep icon-create"
-        onClick={() => {
-          history.push({ pathname: '/events/new' })
-        }}
-      >
-        Register New Event
-      </button>
     </>
   )
 }

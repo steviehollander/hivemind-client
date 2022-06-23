@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+
+
 .logo {
 
-    width: 250px;
+    width: 400px;
     display: grid;
+    justify-content: center;
+    margin-left: 2%;
+    
+
 
 
 
@@ -23,4 +31,67 @@
 
 
     outline-offset: 42px;
+  
 }
+
+
+
+.signin {
+    font-family: 'Cabin Sketch', cursive;
+    color: rgb(166, 9, 129);
+   
+    margin-left: 55%;
+    transform: translate(-50%, -50%) }
+
+
+    .btnsignin {
+        background-color: rgb(235, 158, 64);
+        display: grid;
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 7%;
+        outline-offset: 42px;
+        border-radius: 20px;
+        font-family:'Cabin Sketch', cursive;
+        margin-left: 49%;
+    transform: translate(-50%, -50%)
+    
+    }
+
+
+
+
+
+    .usernamepassword {
+        font-family: 'Cabin Sketch', cursive;
+        background-image: url('https://thumbs.dreamstime.com/b/colorful-beehive-pattern-graphic-vector-texture-design-colorful-beehive-pattern-graphic-texture-design-229768411.jpg');
+        border: #f0c588 solid 2px;
+        border-radius: 30px;
+        box-shadow: 0 30px 40px rgba(242, 186, 89, 0.847);
+
+    }
+
+
+    .password {
+        margin-top: 5%;
+    }
+
+
+
+    .JoinHive {
+        font-family: 'Cabin Sketch', cursive;
+    color: rgb(166, 9, 129);
+   
+    margin-left: 50%;
+    border-width: 20%;
+    
+    transform: translate(-50%, -50%)
+    
+    
+
+    }
+
+
+    .registerItem {
+        margin-bottom: 2%;
+    }
